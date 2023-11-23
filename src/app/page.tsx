@@ -1,10 +1,15 @@
-import Image from "next/image";
+import Header from "@/components/header";
+import Section from "@/components/section";
 
 export default function Home() {
+
 	return (
-		<main className="">
-			<h1 className="text-center text-lg">Site under construction</h1>
-			<h2 className="text-center text-sm">(It will be made by coffee)</h2>
+		<main className="bg-secondary">
+			<div className="m-auto lg:w-1/2 md:w-3/4 w-full">
+				<Header title="Made By Coffee" />
+        <Section section_number={0}/>
+        <Section section_number={1}/>
+			</div>
 		</main>
 	);
 }
