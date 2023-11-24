@@ -3,8 +3,6 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
 import Link from 'next/link'
 
-
-
 interface InternalLinkProps {
   label: string,
   href: string,

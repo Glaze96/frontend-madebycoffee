@@ -15,23 +15,31 @@ const Header = ({ title, logo }: HeaderProps) => {
 					width={64}
 					height={64}
 					alt={"made by coffee square logo left"}
+					className="animate-fadeInSlow"
 				/>
-				<h1 className="lg:text-xl text-lg text-primaryDark font-header underline underline-offset-4 text-center">{title}</h1>
+				<h1 className="animate-fadeIn lg:text-xl text-lg text-primaryDark font-header underline underline-offset-4 text-center">
+					{title}
+				</h1>
 				<Image
 					src={logo}
 					width={64}
 					height={64}
 					alt={"made by coffee square logo right"}
+					className="animate-fadeInSlow"
 				/>
 			</div>
 			<hr className="lg:w-1/2 w-3/4" />
 			<div className="flex flex-col items-center space-x-2 m-1">
-        <h1>Bringing you pipin&#39; hot ideas since 2023.</h1>
-				<InternalLink
-					label="Created by Glaze"
-					href="https://iamglaze.me/"
-					external={true}
-				/>
+				<span className="animate-type overflow-x-hidden whitespace-nowrap">
+					A place where ideas are made by coffee
+				</span>
+				<div className="animate-fadeInSlow">
+					<InternalLink
+						label="Created by Glaze"
+						href="https://iamglaze.me/"
+						external={true}
+					/>
+				</div>
 			</div>
 		</div>
 	);
