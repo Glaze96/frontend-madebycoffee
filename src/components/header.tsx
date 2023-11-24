@@ -26,7 +26,7 @@ const Header = ({ title, logo }: HeaderProps) => {
 			</div>
 			<hr className="lg:w-1/2 w-3/4" />
 			<div className="flex flex-col items-center space-x-2 m-1">
-        <h1>Bringing you pipin' hot ideas since 2023.</h1>
+        <h1>Bringing you pipin&#39; hot ideas since 2023.</h1>
 				<InternalLink
 					label="Created by Glaze"
 					href="https://iamglaze.me/"
