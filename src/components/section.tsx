@@ -19,7 +19,7 @@ const Section = async ({ section_number }: SectionProps) => {
 
 	return (
 		<div className="w-full p-5">
-			<h1 className="text-lg text-primaryDark">{title}</h1>
+			<h1 className="text-lg text-primaryDark text-bold font-main font-bold">{title}</h1>
 			<hr />
 			<div className="flex flex-row p-2 space-x-4">
 				{image_src && 

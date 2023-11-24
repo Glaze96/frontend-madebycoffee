@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
   theme: {
+    fontFamily: {
+      "header": "var(--font-header)",
+      "main": "var(--font-main)",
+    },
     lineHeight: {
       default: "1.25",
       none: "1",
@@ -35,7 +39,7 @@ module.exports = {
     },
     colors: {
       primary: "#baa59a",
-      primaryDark: "#362136",
+      primaryDark: "#36241b",
       secondary: "#e0d0bf",
       black: "#131414",
       blackSecondary: "#1b1d21",

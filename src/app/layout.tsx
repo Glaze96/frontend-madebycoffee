@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Roboto, Abel } from "next/font/google";
 import "./globals.css";
 
-const abel_font = Abel({ subsets: ["latin"], weight: '400'} )
+import { Kanit, Nunito_Sans } from "next/font/google";
+
+const header_font = Kanit({ subsets: ["latin"], weight: "600", variable: "--font-header", display: 'swap' });
+const main_font = Nunito_Sans({ subsets: ["latin"], weight: ["200", "400", "700", "800", "1000"], variable: "--font-main", display: 'swap' });
 
 export const metadata: Metadata = {
 	title: "Made By Coffee",
-	description: "The hottest company",
+	description: "A piping hot indie company",
+  icons: "/logo_icon.ico"
 };
 
 export default function RootLayout({
@@ -15,8 +18,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
-			<body className={abel_font.className}>{children}</body>
+    <html className={`${header_font.variable} ${main_font.className} `} lang="en">
+			<body>{children}</body>		
 		</html>
 	);
 }
