@@ -8,20 +8,20 @@ interface SectionContentProps {
 
 const SectionContent = ({ title, content, img_src }: SectionContentProps) => {
 	return (
-		<div className="w-full p-5">
+		<div className="lg:w-1/2 p-5">
 			<h1 className="text-lg text-primaryDark text-bold font-main font-bold">
 				{title}
 			</h1>
 			<hr />
-			<div className="flex flex-row p-2 space-x-2">
+			<div className="flex lg:flex-row flex-col p-2 space-x-2">
 				{img_src && (
 					<Image
 						src={img_src}
 						alt={title}
 						height={0}
 						width={0}
-						sizes="100px"
-						style={{ width: "auto", height: "100%" }}
+            sizes="400px"
+						style={{ width: "50%", height: "50%" }}
 					/>
 				)}
 				<p className="text-black">{content}</p>

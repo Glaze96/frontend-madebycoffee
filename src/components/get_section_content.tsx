@@ -16,7 +16,7 @@ export const GetSectionContent = async (file_name: string) => {
 		const title = data.sections[section_number].title;
 		const content = data.sections[section_number].content;
 		const img_src = data.sections[section_number].image;
-		return <SectionContent title={title} content={content} img_src={img_src} />;
+		return <SectionContent key={title} title={title} content={content} img_src={img_src} />;
 	}
   
   const final = []

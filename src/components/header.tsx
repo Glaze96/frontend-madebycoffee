@@ -15,7 +15,7 @@ const Header = ({ title, logo }: HeaderProps) => {
 					width={64}
 					height={64}
 					alt={"made by coffee square logo left"}
-					className="animate-fadeInSlow"
+					className="animate-fadeIn"
 				/>
 				<h1 className="animate-fadeIn lg:text-xl text-lg text-primaryDark font-header underline underline-offset-4 text-center">
 					{title}
@@ -25,7 +25,7 @@ const Header = ({ title, logo }: HeaderProps) => {
 					width={64}
 					height={64}
 					alt={"made by coffee square logo right"}
-					className="animate-fadeInSlow"
+					className="animate-fadeIn"
 				/>
 			</div>
 			<hr className="lg:w-1/2 w-3/4" />
