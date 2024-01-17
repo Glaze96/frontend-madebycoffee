@@ -8,7 +8,7 @@ const main_font = Nunito_Sans({ subsets: ["latin"], weight: ["200", "400", "700"
 
 export const metadata: Metadata = {
 	title: "Made By Coffee",
-	description: "A piping hot indie company",
+	description: "A Place for Coding. A Place for Coffee.",
   icons: "/logo_icon.ico"
 };
 
