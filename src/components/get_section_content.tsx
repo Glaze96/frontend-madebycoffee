@@ -1,6 +1,5 @@
 "use server";
 
-import Image from "next/image";
 import { promises as fs } from "fs";
 import SectionContent from "./section_content";
 
@@ -16,7 +15,8 @@ export const GetSectionContent = async (file_name: string) => {
 		const title = data.sections[section_number].title;
 		const content = data.sections[section_number].content;
 		const img_src = data.sections[section_number].image;
-		return <SectionContent key={title} title={title} content={content} img_src={img_src} />;
+		const link = data.sections[section_number].link;
+		return <SectionContent key={title} title={title} content={content} img_src={img_src} link={link}/>;
 	}
   
   const final = []

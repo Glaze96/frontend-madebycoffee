@@ -14,10 +14,10 @@ const InfoSection = ({ sections }: InfoSectionProps) => {
 	useEffect(() => {});
 
 	return (
-		<div className="lg:w-3/4 w-full flex flex-col items-center">
+		<div className="lg:w-3/4 w-full flex flex-col items-center bg-white">
 			{!showSections && (
 				<div className="self-center p-2 animate-fadeInSlow">
-					<Button title="Learn more" callback={() => setShowSections(true)} />
+					<Button title="Meet the team" callback={() => setShowSections(true)} />
 				</div>
 			)}
 			{showSections && (

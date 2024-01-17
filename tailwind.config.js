@@ -38,12 +38,12 @@ module.exports = {
 			full: "9999px",
 		},
 		colors: {
-			primary: "#baa59a",
-			primaryDark: "#36241b",
-			secondary: "#e0d0bf",
+			primary: "#c49a6b",
+			primaryDark: "#594a41",
+			secondary: "#bfb6a6",
 			black: "#131414",
 			blackSecondary: "#1b1d21",
-			white: "#F8F8F8",
+			white: "#FFFFFF",
 
 			transparent: "hsl(0,0%,0%,0)",
 		},
@@ -52,6 +52,7 @@ module.exports = {
 		},
 		fontSize: {
 			base: ["1.25rem", { lineHeight: "1.5" }],
+			md: ["2rem", { lineHeight: "1.5" }],
 			lg: ["2.5rem", { lineHeight: "1.5" }],
 			xl: ["4rem", { lineHeight: "1.125" }],
 			"2xl": ["6rem", { lineHeight: "1" }],
@@ -60,7 +61,7 @@ module.exports = {
 		extend: {
 			animation: {
 				fadeIn: "fadeIn 1s ease-out forwards",
-				fadeInSlow: "fadeInSlow 5s ease-out forwards",
+				fadeInSlow: "fadeInSlow 6s ease-out forwards",
 				fadeInLeft: "fadeInLeft 0.5s ease-in-out forwards",
 				fadeInRight: "fadeInRight 0.5s ease-in-out forwards",
 				fadeInTop: "fadeInTop 0.75s ease-in-out forwards",

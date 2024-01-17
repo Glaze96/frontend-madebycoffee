@@ -1,19 +1,24 @@
 import Image from "next/image";
+import InternalLink from "./internal_link";
 
 interface SectionContentProps {
 	title: string;
 	content: string;
 	img_src: string;
+  link: string;
 }
 
-const SectionContent = ({ title, content, img_src }: SectionContentProps) => {
+const SectionContent = ({ title, content, img_src, link }: SectionContentProps) => {
 	return (
 		<div className="lg:w-1/2 p-5">
-			<h1 className="text-lg text-primaryDark text-bold font-main font-bold">
+			<div className="">
+      <h1 className="text-md lg:text-lg text-primaryDark text-bold font-main font-bold">
 				{title}
 			</h1>
+      {link && (<InternalLink label={link} href={link} external={true} />)}
+      </div>
 			<hr />
-			<div className="flex lg:flex-row flex-col p-2 space-x-2">
+			<div className="flex lg:flex-row flex-col p-2 md:space-x-2">
 				{img_src && (
 					<Image
 						src={img_src}
