@@ -1,0 +1,24 @@
+{
+	"members": [
+		{
+			"title": "Glaze",
+			"content": "Glaze is just a random coffee lover. :D",
+      "image": "/glaze.jpg",
+      "link": "https://iamglaze.me"
+		},
+		{
+			"title": "Isak",
+			"content": "Isak converts coffee directly into code. It's scary... <.<",
+      "image": "/isak.jpg",
+      "link": "https://isakhorvath.me/"
+		}
+	],
+	"projects": [
+		{
+			"title": "Ludum Dare",
+			"content": "Sometimes we participate in game jams together! When we do, we usually spend about 3 headaches and 5 pots of coffee together.",
+      "image": "",
+      "links": "https://ldjam.com/users/dudum-lare/games"
+		}
+	]
+}

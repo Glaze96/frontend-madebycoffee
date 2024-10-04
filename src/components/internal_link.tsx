@@ -13,9 +13,9 @@ const InternalLink = ( {label, href, external } : InternalLinkProps ) => {
 
   return (
     <Link href={href} target={external ? "_blank" : ""}>
-      <div className='flex flex-row items-baseline space-x-2'>
-        <h1 className="lg:text-md underline">{label}</h1>
-        <div className='w-5'>
+      <div className='flex flex-row items-center space-x-2'>
+        <h1 className="lg:text-sm underline">{label}</h1>
+        <div className='w-4'>
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </div>
       </div>

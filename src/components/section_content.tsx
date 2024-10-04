@@ -5,31 +5,38 @@ interface SectionContentProps {
 	title: string;
 	content: string;
 	img_src: string;
-  link: string;
+	link: string;
 }
 
-const SectionContent = ({ title, content, img_src, link }: SectionContentProps) => {
+const SectionContent = ({
+	title,
+	content,
+	img_src,
+	link,
+}: SectionContentProps) => {
 	return (
-		<div className="lg:w-1/2 p-5">
-			<div className="">
-      <h1 className="text-md lg:text-lg text-primaryDark text-bold font-main font-bold">
-				{title}
-			</h1>
-      {link && (<InternalLink label={link} href={link} external={true} />)}
-      </div>
-			<hr />
-			<div className="flex lg:flex-row flex-col p-2 md:space-x-2">
+		<div className="lg:w-1/2 p-2">
+			<div className="flex items-baseline space-x-2">
+				<h1 className="text-md lg:text-lg text-primaryDark font-main">
+					{title}
+				</h1>
+				{link && <InternalLink label={link} href={link} external={true} />}
+			</div>
+			<div className="flex my-2">
 				{img_src && (
 					<Image
+						className="rounded-md"
 						src={img_src}
 						alt={title}
 						height={0}
 						width={0}
-            sizes="400px"
-						style={{ width: "50%", height: "50%" }}
+						sizes="400px"
+						style={{ width: "25%", height: "25%" }}
 					/>
 				)}
-				<p className="text-black">{content}</p>
+				<div className="flex w-full lg:flex-row flex-col mx-2 p-2 rounded-md md:space-x-2 bg-secondary">
+					<p className="text-black">{content}</p>
+				</div>
 			</div>
 		</div>
 	);
